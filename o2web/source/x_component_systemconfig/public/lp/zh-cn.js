@@ -226,7 +226,7 @@ o2.xApplication.systemconfig.LP = {
         "userConfig": "用户界面配置",
 
         "openStatus": "进入系统",
-        "openStatusInfo": "每次进入O2OA系统，默认会打开上一次退出系统时打开的应用，您可以在此处改变这一行为。",
+        "openStatusInfo": "每次进入系统，默认会打开上一次退出系统时打开的应用，您可以在此处改变这一行为。",
         "openStatusCurrent": "将打开的应用和当前应用都定位到上一次退出时的状态（默认）",
         "openStatusApp": "打开上一次退出系统时的应用，并将首页作为当前应用",
         "openStatusIndex": "只打开首页应用",
@@ -352,7 +352,7 @@ o2.xApplication.systemconfig.LP = {
         "passwordEmpty": "请输入原密码、新密码和确认密码",
 
         "tokenEncryptType": "密码加密方式",
-        "tokenEncryptTypeInfo": "O2OA支持以下几种密码和Token加密方式，可以根据需要选择。更多信息请查看：<a href='https://www.o2oa.net/search.html?q=%E5%9B%BD%E5%AF%86' target='_blank'>国密</a>",
+        "tokenEncryptTypeInfo": "系统支持以下几种密码和Token加密方式，可以根据需要选择。",
         "tokenEncryptTypeLabel": "加密方式",
         "encryptTypeOptions": {
             "default": "默认",
@@ -391,7 +391,7 @@ o2.xApplication.systemconfig.LP = {
         "appTokenExpiredInfo": "用户登录系统后，如果长时间不和服务器发生交互，系统就会注销次此登录。您可以在此处设置登录有效时长，单位为分钟。用于移动端。",
 
         "tokenName": "token名称",
-        "tokenNameInfo": "系统默认的token名称为x-token，您可以在此处修改token名称，以防止在相同Domain下的Cookie冲突，这在相同Domain下部署多套O2OA时尤其有用。(需要重启服务器)",
+        "tokenNameInfo": "系统默认的token名称为x-token，您可以在此处修改token名称，以防止在相同Domain下的Cookie冲突，这在相同Domain下部署多套系统时尤其有用。(需要重启服务器)",
 
         "tokenCookieHttpOnly": "启用Cookie HttpOnly",
         "tokenCookieHttpOnlyInfo": "保存token的cookie是否启用httponly",
@@ -463,12 +463,12 @@ o2.xApplication.systemconfig.LP = {
 
         "useSSOConfig": "如何使用鉴权密钥",
         "useSSOConfigInfo": "在两种场景下需要使用鉴权密钥：",
-        "useSSOConfigInfo1": "1、外部系统需要与O2OA实现单点登录;",
-        "useSSOConfigInfo2": "2、外部系统需要调用O2OA平台的接口服务;",
-        "useSSOConfigInfo3": "需要将鉴权的名称，密钥告知外部系统，外部系统采取3DES算法使用密钥对<span style='color: blue'>\"person#timestamp\"</span>文本进行加密，获取到访问O2OA的临时票据（token）。<br/>" +
-            "<span style='color: blue'>person</span>：表示指定用户的用户名、唯一编码或员工号。（具体使用哪个要根据外部系统与O2OA的用户关联的字段）<br/>" +
+        "useSSOConfigInfo1": "1、外部系统需要与系统实现单点登录;",
+        "useSSOConfigInfo2": "2、外部系统需要调用本系统的接口服务;",
+        "useSSOConfigInfo3": "需要将鉴权的名称，密钥告知外部系统，外部系统采取3DES算法使用密钥对<span style='color: blue'>\"person#timestamp\"</span>文本进行加密，获取到访问系统的临时票据（token）。<br/>" +
+            "<span style='color: blue'>person</span>：表示指定用户的用户名、唯一编码或员工号。（具体使用哪个要根据外部系统与系统的用户关联的字段）<br/>" +
             "<span style='color: blue'>timestamp</span>：表示为1970年1月1日0时0秒到当前时间的毫秒数。（为了确保token的时效性,有效时间为1分钟）<br/><br>" +
-            "生成token后，外部系统可以直接通过访问以下地址，实现与O2OA的单点认证：<br/>" +
+            "生成token后，外部系统可以直接通过访问以下地址，实现与系统的单点认证：<br/>" +
             "http://servername/x_desktop/sso.html?client={<span style='color: blue'>client</span>}&xtoken={<span style='color: blue'>token</span>}&redirect={<span style='color: blue'>redirect</span>}<br/>" +
             "<span style='color: blue'>client</span>表示使用的鉴权名称；<br/>" +
             "<span style='color: blue'>token</span>表示产生的临时票据token；<br/>" +
@@ -484,7 +484,7 @@ o2.xApplication.systemconfig.LP = {
         "oauthClientConfig": "OAuth客户端配置",
         "oauthServerConfig": "OAuth服务端配置",
 
-        "oauthClientConfigInfo": "如果将O2OA平台作为OAuth2认证服务器，您可以在此可以配置多个OAuth客户端，为其他系统实现登录授权",
+        "oauthClientConfigInfo": "如果将本系统作为OAuth2认证服务器，您可以在此可以配置多个OAuth客户端，为其他系统实现登录授权",
         "oauthServerConfigInfo": "如果您已有OAuth2认证服务端，您可以在此配置多个OAuth服务端，为本系统实现登录授权",
 
         "addOauthClientConfig": "添加OAuth客户端配置",
@@ -576,17 +576,17 @@ o2.xApplication.systemconfig.LP = {
         "databaseSource": "数据源配置",
         "entity": "实体类配置",
         "tools": "备份工具",
-        "infoInner": "您正在使用O2OA内置数据库，O2OA自带的数据库是一个内嵌式的内存数据库，适合用于开发环境、功能演示环境，并不适合用作正式环境。 " +
+        "infoInner": "您正在使用系统内置数据库，系统自带的数据库是一个内嵌式的内存数据库，适合用于开发环境、功能演示环境，并不适合用作正式环境。 " +
             "如果作为正式环境使用，建议您使用拥有更高性能并且更加稳定的商用级别数据库。",
-        "infoExternal": "您已经使用了扩展数据库，O2OA内置数据库已停用。",
+        "infoExternal": "您已经使用了扩展数据库，系统内置数据库已停用。",
 
         "info": "<span style='color: red'>修改数据库配置在大部分情况下都会影响到系统现有数据，请慎重修改此处配置！</span>",
-        "info2": "在修改数据库配置之前，建议您先使用O2OA的备份功能（ctl -dd）将系统数据进行备份，在修改完数据库配置后重启服务器，然后将备份的数据恢复到数据库（ctl -rd）。所有数据库相关配置的修改，都需要重启服务器",
+        "info2": "在修改数据库配置之前，建议您先使用系统的备份功能（ctl -dd）将系统数据进行备份，在修改完数据库配置后重启服务器，然后将备份的数据恢复到数据库（ctl -rd）。所有数据库相关配置的修改，都需要重启服务器",
 
         "innerDataSources": "内置数据库",
         "externalDataSources": "扩展数据库",
-        "innerDataSourcesInfo": "O2OA自带的数据库是一个内嵌式的内存数据库，适合用于开发环境、功能演示环境。",
-        "externalDataSourcesInfo": "O2OA支持外部数据库扩展，建议生产环境使用商用级别数据库以保证数据安全和性能。",
+        "innerDataSourcesInfo": "系统自带的数据库是一个内嵌式的内存数据库，适合用于开发环境、功能演示环境。",
+        "externalDataSourcesInfo": "系统支持外部数据库扩展，建议生产环境使用商用级别数据库以保证数据安全和性能。",
 
         "addDatabaseConfig": "添加数据库配置",
 
@@ -654,8 +654,8 @@ o2.xApplication.systemconfig.LP = {
         "saveEntityConfigSuccess": "实体类配置保存成功，请重启服务器",
 
         "dumpRestoreTools": "数据库备份恢复工具",
-        "toolsInfo": "O2OA提供了数据备份和恢复工具，<span style='color: red'>修改数据库配置在大部分情况下都会影响到系统现有数据</span>，" +
-            "所以在修改数据库配置之前，建议您先使用O2OA的备份功能将系统数据进行备份，在修改完数据库配置后重启服务器，然后将备份的数据恢复到数据库。<br>" +
+        "toolsInfo": "系统提供了数据备份和恢复工具，<span style='color: red'>修改数据库配置在大部分情况下都会影响到系统现有数据</span>，" +
+            "所以在修改数据库配置之前，建议您先使用系统的备份功能将系统数据进行备份，在修改完数据库配置后重启服务器，然后将备份的数据恢复到数据库。<br>" +
             "<span class='mainColor_color'>在您进行备份或恢复数据时，请勿离开本页面。您可以在另一个浏览器窗口中进行其它操作</span>",
 
         "dumpTools": "备份数据",
@@ -753,7 +753,7 @@ o2.xApplication.systemconfig.LP = {
         "baseConfig": "基本配置",
         "environmentConfig": "环境变量配置",
         "sameConfig": "使用相同的服务器配置",
-        "sameConfigInfo": "O2OA有三个逻辑服务器：中心服务、应用服务和WEB服务，默认情况下它们使用同一个端口和同一套配置，您也可以为三个服务分开配置不同的端口、主机等信息。",
+        "sameConfigInfo": "系统有三个逻辑服务器：中心服务、应用服务和WEB服务，默认情况下它们使用同一个端口和同一套配置，您也可以为三个服务分开配置不同的端口、主机等信息。",
 
         "serverConfig": "服务器配置",
         "serverConfigInfo": "在此配置服务器相关参数<span style='color:red;'>（需要重启服务器）</span>",
@@ -767,7 +767,7 @@ o2.xApplication.systemconfig.LP = {
         "httpProtocol": "WEB访问协议",
         "sslKeyStorePassword": "SSL密码",
         "sslKeyManagerPassword": "SSL管理密码",
-        "sslInfo": "<span>启用SSL，您需要将已申请的证书文件复制到O2OA服务端的config目录下，并改名成`keystore`，集群环境需要在每台服务器存放证书文件。（需要重启服务器）</span>",
+        "sslInfo": "<span>启用SSL，您需要将已申请的证书文件复制到系统服务端的config目录下，并改名成`keystore`，集群环境需要在每台服务器存放证书文件。（需要重启服务器）</span>",
 
         "saveServerConfig": "保存服务器配置",
         "saveServerConfigSuccess": "服务器配置保存成功",
@@ -845,14 +845,14 @@ o2.xApplication.systemconfig.LP = {
 
         "refererHeadCheckRegular": "请求Referer校验",
         "refererHeadCheckRegularInfo": "在此处可配置服务器对于请求的Referer头的校验规则，配置一个正则表达式，通过正则表达式校验Referer值的请求才被允许。" +
-            "合理配置此项可有效防止CSRF攻击。如配置 (.+?)o2oa.net(.+?) 仅允许referer包含“o2oa.net”的请求",
+            "合理配置此项可有效防止CSRF攻击。如配置 (.+?)hnch.net(.+?) 仅允许referer包含“hnch.net”的请求",
 
         "contentSecurityPolicy": "Content-Security-Policy响应头",
         "contentSecurityPolicyInfo": "HTTP 响应头 Content-Security-Policy 允许站点管理者控制用户代理能够为指定的页面加载哪些资源。除了少数例外情况，设置的政策主要涉及指定服务器的源和脚本结束点。这将帮助防止跨站脚本攻击（Cross-Site Script）。",
         "contentSecurityPolicyInfo2": "更多关于Content-Security-Policy响应头的信息请查看：<a target='_blank' href='https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Security-Policy'>https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Security-Policy</a>",
 
         "accessControlAllowOrigin": "跨域来源许可",
-        "accessControlAllowOriginInfo": "跨源资源共享许可，设置http返回的Access-Control-Allow-Origin标识，可以用于CORS攻击防护，如:https://www.o2oa.net",
+        "accessControlAllowOriginInfo": "跨源资源共享许可，设置http返回的Access-Control-Allow-Origin标识，可以用于CORS攻击防护，如:https://www.hnch.net",
 
         "personUnitOrderByAsc": "人员组织升序",
         "personUnitOrderByAscInfo": "在展现获取人员组织数据时，是否使用升序排序，默认true，否则为降序排序",
@@ -868,7 +868,7 @@ o2.xApplication.systemconfig.LP = {
         "fileTypeExcludesInfo": "设置禁止上传的附件类型，设置扩展名，用半角逗号分隔",
 
         "dumpData": "自动备份数据",
-        "dumpDataInfo": "O2OA支持定时自动备份数据，请在此处配置",
+        "dumpDataInfo": "系统支持定时自动备份数据，请在此处配置",
         "dumpEnable": "是否启用",
         "dumpCron": "定时表达式",
         "dumpSize": "最大备份数",
@@ -878,7 +878,7 @@ o2.xApplication.systemconfig.LP = {
 
 
         "restoreData": "自动恢复数据",
-        "restoreDataInfo": "O2OA支持定时自动恢复数据，请在此处配置",
+        "restoreDataInfo": "系统支持定时自动恢复数据，请在此处配置",
         "restoreEnable": "是否启用",
         "restoreCron": "定时表达式",
         "restorePath": "恢复路径",
@@ -916,7 +916,7 @@ o2.xApplication.systemconfig.LP = {
     },
     "_cacheConfig": {
         "type": "缓存类型",
-        "typeInfo": "O2OA系统支持guava和redis两种缓存，默认使用guava。",
+        "typeInfo": "系统支持guava和redis两种缓存，默认使用guava。",
 
         "guava_maximumSize": "缓存最大容量",
         "guava_maximumSizeInfo": "缓存最大容量，对象数量，默认值:3000",
@@ -956,7 +956,7 @@ o2.xApplication.systemconfig.LP = {
 
         "docToWordType": "公文编辑器组件转换WORD方式",
         "docToWordTypeInfo": "公文编辑器组件在配置了转换WORD方式为“Service”时，由后端服务进行WORD转换。" +
-            "O2OA系统支持本地服务转换或者使用云服务转换，使用云服务转换能够更好的兼容WORD格式，但您必须先连接到O2云。请在“云服务配置”中连接O2云。",
+            "系统支持本地服务转换或者使用云服务转换，使用云服务转换能够更好的兼容WORD格式，但您必须先连接到O2云。请在“云服务配置”中连接O2云。",
         "docWordTypeSelect": {
             "local": "本地服务",
             "cloud": "云服务"
@@ -974,7 +974,7 @@ o2.xApplication.systemconfig.LP = {
         "executorQueueBusyThreshold": "执行器队列繁忙阈值",
         "executorQueueBusyThresholdInfo": "处理流程流转的执行器队列的繁忙阈值。默认5，一般不建议修改",
 
-        "timerInfo": "O2OA流程平台需要一些定时器来处理流程任务，您可在此处对这些定时器进行配置。（所有对定时器的修改，都需要重启服务器才能生效）",
+        "timerInfo": "系统流程平台需要一些定时器来处理流程任务，您可在此处对这些定时器进行配置。（所有对定时器的修改，都需要重启服务器才能生效）",
 
         "enable": "是否启用",
         "cron": "定时表达式",
@@ -1004,7 +1004,7 @@ o2.xApplication.systemconfig.LP = {
         "updateTableInfo": "如果流程中设置了将流程数据映射到数据表，此定时器用于处理映射数据队列",
 
         "archiveHadoop": "归档到Hadoop",
-        "archiveHadoopInfo": "O2OA支持将已完成的工作数据归档到Hadoop，您可以在此处设置Hadoop相关配置",
+        "archiveHadoopInfo": "系统支持将已完成的工作数据归档到Hadoop，您可以在此处设置Hadoop相关配置",
         "fsDefaultFS": "Hadoop地址",
         "username": "Hadoop用户名",
         "path": "路径前缀",
@@ -1263,14 +1263,14 @@ o2.xApplication.systemconfig.LP = {
         "scanLoginAppSecret": "钉钉扫码登录的appSecret",
         "attendanceSyncEnable": "是否启用考勤信息",
 
-        "enableInfo": "O2OA平台拥有配套的原生开发的安卓和IOS移动APP，可以以微应用的方式集成到阿里钉钉，同步钉钉的企业通讯录作为本地组织人员架构，并且可以将待办等通知直接推送到钉钉进行消息提醒。(需要重启服务器)",
-        "enableInfo2": "<span class='mainColor_color'>如果O2OA成功接入钉钉，O2OA将会自动从钉钉拉取所有的人员和组织进行同步，O2OA的所有人员和组织以企业钉钉中创建的组织架构为准（ 本地已经创建的人员和组织将保留不会被删除，可能会造成人员和组织重复 ）</span>",
-        "enableInfo3": "更多O2OA与钉钉集成的内容，请查看：<a href='https://www.o2oa.net/search.html?q=%E9%92%89%E9%92%89' target='_blank'>钉钉</a>",
+        "enableInfo": "本系统拥有配套的原生开发的安卓和IOS移动APP，可以以微应用的方式集成到阿里钉钉，同步钉钉的企业通讯录作为本地组织人员架构，并且可以将待办等通知直接推送到钉钉进行消息提醒。(需要重启服务器)",
+        "enableInfo2": "<span class='mainColor_color'>如果系统成功接入钉钉，系统将会自动从钉钉拉取所有的人员和组织进行同步，系统的所有人员和组织以企业钉钉中创建的组织架构为准（ 本地已经创建的人员和组织将保留不会被删除，可能会造成人员和组织重复 ）</span>",
+        "enableInfo3": "更多系统与钉钉集成的内容，请查看：<a href='https://www.o2oa.net/search.html?q=%E9%92%89%E9%92%89' target='_blank'>钉钉</a>",
 
         "syncCronInfo": "回调信号触发同步检查,默认每10分钟运行一次,如果期间内有钉钉回调信号接收到,那么触发同步任务进行人员同步.(需要在钉钉设置回调配置)",
         "forceSyncCronInfo": "强制同步定时设置，默认在每天的8点和12点强制进行同步人员和组织",
         "oapiAddressInfo": "钉钉API服务器地址，一般不需要修改",
-        "workUrlInfo": "钉钉消息打开工作的url地址，如：https://sample.o2oa.net/x_desktop/",
+        "workUrlInfo": "钉钉消息打开工作的url地址，如：https://sample.hnch.net/x_desktop/",
         "messageRedirectPortalInfo": "当钉钉消息处理完成后，可指定跳转到特定的门户页面",
 
         "saveDingding": "保存钉钉配置",
@@ -1292,13 +1292,13 @@ o2.xApplication.systemconfig.LP = {
             "tempName": "模版字段",
             "name": "业务字段",
 
-            "workUrlInfo": "微信公众号消息打开工作的url地址，如：https://sample.o2oa.net/x_desktop/",
-            "enableInfo": "O2OA支持微信公众号的集成，用户可以通过关注微信公众号进行工作处理。并且支持待办工作的消息提醒。(需要重启服务器)",
-            "enableInfo2": "更多O2OA与微信公众号的内容，请查看：<a href='https://www.o2oa.net/search.html?q=%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7' target='_blank'>微信公众号</a>",
-            "enablePublishInfo": "启用菜单发布后，可已将在O2OA中配置好的菜单功能，发布到微信公众号。可在 APP工具-公众号菜单配置 中配置微信公众号菜单",
+            "workUrlInfo": "微信公众号消息打开工作的url地址，如：https://sample.hnch.net/x_desktop/",
+            "enableInfo": "系统支持微信公众号的集成，用户可以通过关注微信公众号进行工作处理。并且支持待办工作的消息提醒。(需要重启服务器)",
+            "enableInfo2": "更多系统与微信公众号的内容，请查看：<a href='https://www.o2oa.net/search.html?q=%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7' target='_blank'>微信公众号</a>",
+            "enablePublishInfo": "启用菜单发布后，可已将在系统中配置好的菜单功能，发布到微信公众号。可在 APP工具-公众号菜单配置 中配置微信公众号菜单",
             "portalIdInfo": "当消息处理完成后，可指定跳转到特定的门户页面",
             "scriptIdInfo": "当从公众号接收到文本消息时，可执行平台服务管理中的接口，在此处指定要执行的接口",
-            "fieldListInfo": "这个是模版的内容中业务字段的对应关系，目前O2OA提供了这几个业务字段 【creatorPerson:创建人,  activityName: 当前节点,  processName: 流程名称, startTime: 开始时间, title 标题】",
+            "fieldListInfo": "这个是模版的内容中业务字段的对应关系，目前系统提供了这几个业务字段 【creatorPerson:创建人,  activityName: 当前节点,  processName: 流程名称, startTime: 开始时间, title 标题】",
 
             "saveMpweixin": "保存微信公众号配置",
             "saveMpweixinSuccess": "微信公众号配置保存成功"
@@ -1345,11 +1345,11 @@ o2.xApplication.systemconfig.LP = {
             "syncCronInfo": "回调信号触发同步检查,默认每10分钟运行一次,如果期间内有企业微信回调信号接收到,那么触发同步任务进行人员同步.(需要在企业微信设置回调配置)",
             "forceSyncCronInfo": "强制同步定时设置，默认在每天的8点和12点强制进行同步人员和组织",
             "apiAddressInfo": "企业微信API服务器地址，一般不需要修改",
-            "workUrlInfo": "企业微信消息打开工作的url地址，如：https://sample.o2oa.net/x_desktop/",
+            "workUrlInfo": "企业微信消息打开工作的url地址，如：https://sample.hnch.net/x_desktop/",
             "messageRedirectPortalInfo": "当企业微信消息处理完成后，可指定跳转到特定的门户页面",
 
-            "enableInfo": "O2OA支持以自建应用的方式集成到企业微信，同步企业微信的企业通讯录作为本地组织人员架构，并且可以将待办等通知直接推送到企业微信进行消息提醒。(需要重启服务器)",
-            "enableInfo2": "更多O2OA与企业微信的内容，请查看：<a href='https://www.o2oa.net/search.html?q=%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1' target='_blank'>企业微信</a>",
+            "enableInfo": "系统支持以自建应用的方式集成到企业微信，同步企业微信的企业通讯录作为本地组织人员架构，并且可以将待办等通知直接推送到企业微信进行消息提醒。(需要重启服务器)",
+            "enableInfo2": "更多系统与企业微信的内容，请查看：<a href='https://www.o2oa.net/search.html?q=%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1' target='_blank'>企业微信</a>",
 
             "saveText": "保存企业微信配置",
             "saveSuccess": "企业微信配置保存成功"
@@ -1366,13 +1366,13 @@ o2.xApplication.systemconfig.LP = {
             "workUrl": "消息打开工作的URL",
             "messageRedirectPortal": "处理完成后跳转到门户",
 
-            "enableInfo": "O2OA支持以华为WeLink企业内部轻应用的方式集成，同步WeLink的通讯录作为本地组织人员架构，并且可以将待办等通知直接推送到WeLink进行消息提醒。(需要重启服务器)",
-            "enableInfo2": "更多O2OA与WeLink的内容，请查看：<a href='https://www.o2oa.net/search.html?q=welink' target='_blank'>WeLink</a>",
+            "enableInfo": "系统支持以华为WeLink企业内部轻应用的方式集成，同步WeLink的通讯录作为本地组织人员架构，并且可以将待办等通知直接推送到WeLink进行消息提醒。(需要重启服务器)",
+            "enableInfo2": "更多系统与WeLink的内容，请查看：<a href='https://www.o2oa.net/search.html?q=welink' target='_blank'>WeLink</a>",
 
             "syncCronInfo": "回调信号触发同步检查,默认每10分钟运行一次,如果期间内有WeLink回调信号接收到,那么触发同步任务进行人员同步.(需要在WeLink设置回调配置)",
             "forceSyncCronInfo": "强制同步定时设置，默认在每天的8点和12点强制进行同步人员和组织",
 
-            "workUrlInfo": "WeLink消息打开工作的url地址，如：https://sample.o2oa.net/x_desktop/",
+            "workUrlInfo": "WeLink消息打开工作的url地址，如：https://sample.hnch.net/x_desktop/",
             "messageRedirectPortalInfo": "当WeLink消息处理完成后，可指定跳转到特定的门户页面",
 
             "saveText": "保存WeLink配置",
@@ -1384,7 +1384,7 @@ o2.xApplication.systemconfig.LP = {
         "externalStorage": "扩展存储服务",
 
         "info": "<span style='color: red'>修改存储配置在大部分情况下都会影响到系统现有的文件存储，请慎重修改此处配置！</span>",
-        "info2": "在修改存储配置之前，建议您先使用O2OA的备份功能（ctl -dd）将系统数据进行备份，在修改完存储配置后重启服务器，然后将备份的数据恢复（ctl -rd）。所有数据库相关配置的修改，都需要重启服务器",
+        "info2": "在修改存储配置之前，建议您先使用系统的备份功能（ctl -dd）将系统数据进行备份，在修改完存储配置后重启服务器，然后将备份的数据恢复（ctl -rd）。所有数据库相关配置的修改，都需要重启服务器",
 
         "saveStorageConfig": "保存所有存储配置",
         "saveStorageConfigInfo": "本页中的配置在修改后不会立即保存，您必须点击此按钮后，您修改的配置才会被保存",
@@ -1395,7 +1395,7 @@ o2.xApplication.systemconfig.LP = {
         "reloadStorageConfirm": "此操作将重新载入存储配置，未保存的修改将会丢失，您是否确定恢复存储配置？",
 
         "storageType": "存储服务类型",
-        "storageTypeInfo": "O2OA系统内置提供了文件存储服务，您也可以更具需要采用外部扩展存储节点。",
+        "storageTypeInfo": "系统内置提供了文件存储服务，您也可以更具需要采用外部扩展存储节点。",
         "storageTypeData": [
             {"value": 'inner', "label": "inner", "text": "内置存储服务"},
             {"value": 'external', "label": "external", "text": "扩展存储服务"}
@@ -1462,7 +1462,7 @@ o2.xApplication.systemconfig.LP = {
         "removeNodeConfig": "即将删除存储节点“{name}”，此操作可能会影响到系统中已存储的文件，<br>您确定要删除存储节点“{name}”吗？",
 
         "assignNode": "存储节点分配",
-        "assignNodeInfo": "O2OA中存在以下多种类型的文件，您可以给这些文件分配存储节点，一种类型的文件可分配多个节点。",
+        "assignNodeInfo": "系统中存在以下多种类型的文件，您可以给这些文件分配存储节点，一种类型的文件可分配多个节点。",
         "files": {
             "file": "网盘文件（file）",
             "processPlatform": "流程平台文件（processPlatform）",
@@ -1522,7 +1522,7 @@ o2.xApplication.systemconfig.LP = {
             "messageAppLogoNeedPng": "Logo图片必须要png格式！",
             "messagePortocolNotEmpty": "HTTP协议不能为空！",
             "messageHostNotEmpty": "中心服务器域名不能为空！",
-            "messageHostFormatError": "请填写中心服务器域名或IP，如www.o2oa.net，不要带http这样的头！",
+            "messageHostFormatError": "请填写中心服务器域名或IP，如www.hnch.net，不要带http这样的头！",
             "messagePortNotEmpty": "中心服务器端口号不能为空！",
             "messageContext_not_empty": "中心服务器上下文不能为空！",
             "messagePortocolMustBeHttpHttps": "HTTP协议只能是 http 或 https ！",
@@ -1538,13 +1538,13 @@ o2.xApplication.systemconfig.LP = {
             "formProtocol": "HTTP协议",
             "formProtocolTip": "http / https",
             "formHost": "域名",
-            "formHostTip": "中心服务器域名或IP，如www.o2oa.net",
+            "formHostTip": "中心服务器域名或IP，如www.hnch.net",
             "formPort": "端口号",
             "formPortTip": "中心服务器端口号，如20030",
             "formContext": "上下文",
             "formContextTip": "中心服务器上下文，如/x_program_center",
             "formUrlMapping": "代理urlMapping",
-            "formUrlMappingTip": "服务器外网使用代理地址的时候使用，如{ \"demo.o2oa.net:20020\": \"demo.o2oa.net/dev/app\" }",
+            "formUrlMappingTip": "服务器外网使用代理地址的时候使用，如{ \"demo.hnch.net:20020\": \"demo.hnch.net/dev/app\" }",
             "formAppVersionName": "app版本名称",
             "formAppVersionNameTip": "app的版本名称，如v1.0.0。这个字段默认不需要填写！",
             "formAppBuildNo": "app版本编号",
@@ -1610,7 +1610,7 @@ o2.xApplication.systemconfig.LP = {
     },
     "_pushConfig": {
         "pushType": "消息推送服务",
-        "pushTypeInfo": "O2OA支持极光推送服务和华为推送服务，您可以根据需要选择推送服务",
+        "pushTypeInfo": "系统支持极光推送服务和华为推送服务，您可以根据需要选择推送服务",
         "pushTypeData": [
             {"value": "jpush", "label": "jpush", "text": "极光推送服务"},
             {"value": "none", "label": "none", "text": "禁用消息推送"}
@@ -1650,7 +1650,7 @@ o2.xApplication.systemconfig.LP = {
             "andfx": "移动办公消息"
         },
         "consumerInfoTitle": "消息通道配置",
-        "consumerInfo": "O2OA系统提供多种消息通道，您可以在此处设置各类消息需要通过什么方式发送",
+        "consumerInfo": "系统提供多种消息通道，您可以在此处设置各类消息需要通过什么方式发送",
         "consumerInfo2": "更多关于消息配置的内容，请查看：<a href='https://www.o2oa.net/search.html?q=%E6%B6%88%E6%81%AF%E9%85%8D%E7%BD%AE' target='_blank'>消息</a>",
 
         "addConsumer": "添加消息通道",
@@ -1678,7 +1678,7 @@ o2.xApplication.systemconfig.LP = {
         },
 
         "messageTypeTitle": "消息类型设置",
-        "messageTypeInfo": "O2OA系统内置的各种事件可以发送消息，您可以在此处设置这些事件需要通过那些通道来发送消息。您也可以增加自定义的消息类型",
+        "messageTypeInfo": "系统内置的各种事件可以发送消息，您可以在此处设置这些事件需要通过那些通道来发送消息。您也可以增加自定义的消息类型",
 
         "noConsumer": "此类型消息未选择发送通道",
         "selectConsumer": "选择通道",

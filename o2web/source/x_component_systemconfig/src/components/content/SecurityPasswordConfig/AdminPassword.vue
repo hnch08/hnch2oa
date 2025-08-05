@@ -5,16 +5,16 @@
     <button @click="changeAdminPassword(lp._passwordConfig.modifyAdminPassword, 'xadmin')"
             style="margin-left: 30px; margin-top: 20px" class="mainColor_bg">{{lp._passwordConfig.modifyAdminPassword}}</button>
 
-    <div class="item_title">{{lp._passwordConfig.ternaryPassword}}</div>
-    <div class="item_info">{{lp._passwordConfig.ternaryPasswordInfo}}</div>
-    <button @click="changeAdminPassword(lp._passwordConfig.modifySystemManagerPassword, 'systemManager')"
-            style="margin-left: 30px; margin-top: 20px" class="mainColor_bg">{{lp._passwordConfig.modifySystemManagerPassword}}</button>
+    <!-- <div class="item_title">{{lp._passwordConfig.ternaryPassword}}</div> -->
+    <!-- <div class="item_info">{{lp._passwordConfig.ternaryPasswordInfo}}</div> -->
+    <!-- <button @click="changeAdminPassword(lp._passwordConfig.modifySystemManagerPassword, 'systemManager')"
+            style="margin-left: 30px; margin-top: 20px" class="mainColor_bg">{{lp._passwordConfig.modifySystemManagerPassword}}</button> -->
 
-    <button @click="changeAdminPassword(lp._passwordConfig.modifySecurityManagerPassword, 'securityManager')"
-            style="margin-left: 30px; margin-top: 20px" class="mainColor_bg">{{lp._passwordConfig.modifySecurityManagerPassword}}</button>
+    <!-- <button @click="changeAdminPassword(lp._passwordConfig.modifySecurityManagerPassword, 'securityManager')"
+            style="margin-left: 30px; margin-top: 20px" class="mainColor_bg">{{lp._passwordConfig.modifySecurityManagerPassword}}</button> -->
 
-    <button @click="changeAdminPassword(lp._passwordConfig.modifyAuditManagerPassword, 'auditManager')"
-            style="margin-left: 30px; margin-top: 20px" class="mainColor_bg">{{lp._passwordConfig.modifyAuditManagerPassword}}</button>
+    <!-- <button @click="changeAdminPassword(lp._passwordConfig.modifyAuditManagerPassword, 'auditManager')"
+            style="margin-left: 30px; margin-top: 20px" class="mainColor_bg">{{lp._passwordConfig.modifyAuditManagerPassword}}</button> -->
 
 
     <div class="item_hide" ref="changePasswordNode">

@@ -43,7 +43,7 @@
     <div class="item_info">{{lp._ssoConfig.useSSOConfigInfo2}}</div>
     <div class="item_info" style="line-height: 24px" v-html="lp._ssoConfig.useSSOConfigInfo3"></div>
 
-    <div class="item_info" style="line-height: 24px" v-html="lp._ssoConfig.useSSOConfigInfo4"></div>
+    <!-- <div class="item_info" style="line-height: 24px" v-html="lp._ssoConfig.useSSOConfigInfo4"></div> -->
 
 <!--    <div class="item_title">{{lp._ssoConfig.ssoTokenTools}}</div>-->
 <!--    <div class="item_info" style="margin-top: 20px; padding-left: 20px">-->

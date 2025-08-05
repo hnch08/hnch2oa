@@ -4,7 +4,7 @@
     <div class="systemconfig_title">{{lp._integrationConfig.dingding}}</div>
     <div class="systemconfig_item_info" v-html="lp._integrationConfig.enableInfo"></div>
     <div class="systemconfig_item_info" v-html="lp._integrationConfig.enableInfo2"></div>
-    <div class="systemconfig_item_info" v-html="lp._integrationConfig.enableInfo3"></div>
+    <!-- <div class="systemconfig_item_info" v-html="lp._integrationConfig.enableInfo3"></div> -->
 <!--    <BaseBoolean v-model:value="dingdingData.enable" @change="(value)=>{dingdingData.enable = value; saveConfig('dingding', 'enable', value)}"></BaseBoolean>-->
 
     <div>

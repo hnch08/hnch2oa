@@ -304,7 +304,7 @@ MWF.xApplication.systemconfig.LP={
 		"passwordDisaccord": "La nueva contraseña que ingresó y la confirmación de la contraseña no coinciden.",
 		"passwordEmpty": "Por favor ingrese la contraseña actual, la nueva contraseña y la confirmación de la contraseña.",
 		"tokenEncryptType": "Método de cifrado de la contraseña",
-		"tokenEncryptTypeInfo": "O2OA admite varios métodos de cifrado de contraseñas y tokens que se pueden seleccionar según sea necesario. Para obtener más información, consulte: <a href='https://www.o2oa.net/search.html?q=%E5%9B%BD%E5%AF%86' target='_blank'>国密</a>",
+		"tokenEncryptTypeInfo": "O2OA admite varios métodos de cifrado de contraseñas y tokens que se pueden seleccionar según sea necesario.",
 		"tokenEncryptTypeLabel": "Método de cifrado",
 		"encryptTypeOptions": {
 			"default": "Predeterminado",
@@ -1047,7 +1047,7 @@ MWF.xApplication.systemconfig.LP={
 			"workUrlInfo": "Dirección URL para abrir el trabajo de mensajes de cuenta oficial de WeChat, como: https://sample.o2oa.net/x_desktop/",
 			"enableInfo": "O2OA admite la integración con cuentas oficiales de WeChat, y los usuarios pueden procesar trabajos siguiendo la cuenta pública de WeChat, y admite notificaciones de mensajes para trabajos pendientes. (Se requiere reinicio del servidor)",
 			"enableInfo2": "Para obtener más información sobre la integración de O2OA y cuentas oficiales de WeChat, consulte: <a href='https://www.o2oa.net/search.html?q=%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7' target='_blank'>微信公众号</a>",
-			"enablePublishInfo": "Después de habilitar la publicación de menús, puede publicar las funciones de menú configuradas en O2OA en una cuenta oficial de WeChat. Puede configurar el menú de una cuenta oficial de WeChat en Configuración de menú público de APP.",
+			"enablePublishInfo": "Después de habilitar la publicación de menús, puede publicar las funciones de menú configuradas en el sistema en una cuenta oficial de WeChat. Puede configurar el menú de una cuenta oficial de WeChat en la Configuración de la cuenta pública.",
 			"portalIdInfo": "Después de que se procese un mensaje, puede especificar la página del portal a la que se dirigirá.",
 			"scriptIdInfo": "Cuando se recibe un mensaje de texto de una cuenta oficial de WeChat, se puede ejecutar una interfaz de administración de servicios de plataforma especificada aquí.",
 			"fieldListInfo": "Esta es la relación correspondiente entre los campos empresariales en el contenido de la plantilla. Actualmente, O2OA proporciona los siguientes campos empresariales: [creatorPerson: creador, activityName: nodo actual, processName: nombre del proceso, startTime: hora de inicio, title: título].",

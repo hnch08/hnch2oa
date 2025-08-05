@@ -13,9 +13,9 @@
 <!--        @changeConfig="(value)=>{language = value; saveConfig('person', 'language', value)}"></BaseItem>-->
 
     <BaseItem name="supportedLanguages" :config="supportedLanguages" :allowEditor="false"/>
-    <div class="item_info">{{lp._systemInfo.supportedLanguagesInfo2}} <span @click="openAppstore" class="mainColor_color" style="cursor: pointer; text-decoration: underline;">{{lp._systemInfo.supportedLanguagesSetup}}</span></div>
+    <!-- <div class="item_info">{{lp._systemInfo.supportedLanguagesInfo2}} <span @click="openAppstore" class="mainColor_color" style="cursor: pointer; text-decoration: underline;">{{lp._systemInfo.supportedLanguagesSetup}}</span></div> -->
 
-    <BaseItem name="systemVersion" :config="systemVersion" :allowEditor="false"/>
+    <!-- <BaseItem name="systemVersion" :config="systemVersion" :allowEditor="false"/> -->
   </div>
 </template>
 

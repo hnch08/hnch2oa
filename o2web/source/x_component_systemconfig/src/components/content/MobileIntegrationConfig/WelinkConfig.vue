@@ -3,7 +3,7 @@
 
     <div class="systemconfig_title">{{lp._integrationConfig.weLink}}</div>
     <div class="systemconfig_item_info" v-html="lp._integrationConfig.welinkText.enableInfo"></div>
-    <div class="systemconfig_item_info" v-html="lp._integrationConfig.welinkText.enableInfo2"></div>
+    <!-- <div class="systemconfig_item_info" v-html="lp._integrationConfig.welinkText.enableInfo2"></div> -->
 
     <div>
       <BaseBoolean :label="lp._integrationConfig.welinkText.enable" v-model:value="configData.enable"

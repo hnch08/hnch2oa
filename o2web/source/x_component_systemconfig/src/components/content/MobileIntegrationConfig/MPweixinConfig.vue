@@ -3,7 +3,7 @@
 
     <div class="systemconfig_title">{{lp._integrationConfig.mPweixin}}</div>
     <div class="systemconfig_item_info" v-html="lp._integrationConfig.mpweixinText.enableInfo"></div>
-    <div class="systemconfig_item_info" v-html="lp._integrationConfig.mpweixinText.enableInfo2"></div>
+    <!-- <div class="systemconfig_item_info" v-html="lp._integrationConfig.mpweixinText.enableInfo2"></div> -->
 
     <div>
       <BaseBoolean :label="lp._integrationConfig.mpweixinText.enable" v-model:value="mPweixinData.enable"

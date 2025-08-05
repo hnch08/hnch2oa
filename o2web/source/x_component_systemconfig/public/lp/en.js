@@ -304,7 +304,7 @@ MWF.xApplication.systemconfig.LP={
 		"passwordDisaccord": "The new password you entered does not match the confirmation password",
 		"passwordEmpty": "Please enter the original password, new password and confirmation password",
 		"tokenEncryptType": "Password Encryption",
-		"tokenEncryptTypeInfo": "O2OA supports the following password and Token encryption methods, which can be selected according to needs. For more information, please see: <a href='https://www.o2oa.net/search.html?q=%E5%9B%BD%E5%AF%86' target='_blank'>National Secret</a>.",
+		"tokenEncryptTypeInfo": "O2OA supports the following password and Token encryption methods, which can be selected according to needs.",
 		"tokenEncryptTypeLabel": "Encryption",
 		"encryptTypeOptions": {
 			"default": "Default",
@@ -1045,7 +1045,7 @@ MWF.xApplication.systemconfig.LP={
 			"name": "Business Field",
 			"enableInfo": "O2OA supports the integration of WeChat official accounts, and users can follow the WeChat official accounts for work processing. It also supports message reminders for to-do tasks. (The server needs to be restarted after modification)",
 			"enableInfo2": "For more information on O2OA and WeChat Official Accounts, please check: <a href='https://www.o2oa.net/search.html?q=%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7' target='_blank'>WeChat Official Accounts</a>.",
-			"enablePublishInfo": "After the menu publishing is enabled, the menu functions configured in O2OA can be published to the WeChat official account. The WeChat official account menu can be configured in the configuration of 'APP Tools-Official Account Menu'.",
+			"enablePublishInfo": "After enabling menu publishing, the menu functions configured in the system can be published to the WeChat official account. The WeChat official account menu can be configured in the Official Account Configuration.",
 			"portalIdInfo": "When the message processing is completed, you can specify to jump to a specific portal page.",
 			"scriptIdInfo": "When a text message is received from the official account, the interface in the platform service management can be executed, and the interface to be executed is specified here.",
 			"fieldListInfo": "This is the correspondence between the business fields in the content of the template, Currently O2OA provides the following business fields: creatorPerson, activityName, processName, startTime, title.",

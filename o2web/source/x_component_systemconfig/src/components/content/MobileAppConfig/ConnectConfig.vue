@@ -1,9 +1,9 @@
 <template>
   <div class="systemconfig_area">
-    <div class="item_title">{{lp._appConfig.cloudConnect}}</div>
+    <!-- <div class="item_title">{{lp._appConfig.cloudConnect}}</div> -->
 
-    <div v-if="connectedCollect" class="item_info" v-html="lp._appConfig.connectedInfo"></div>
-    <div v-else class="item_info" v-html="lp._appConfig.notConnectedInfo"></div>
+    <!-- <div v-if="connectedCollect" class="item_info" v-html="lp._appConfig.connectedInfo"></div> -->
+    <!-- <div v-else class="item_info" v-html="lp._appConfig.notConnectedInfo"></div> -->
 
     <div v-if="proxyData">
       <BaseItem

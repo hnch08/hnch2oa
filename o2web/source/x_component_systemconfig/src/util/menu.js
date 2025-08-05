@@ -24,7 +24,7 @@ function getMenuJson(){
                 // {'title': lp.webServer, 'component': '', 'icon': 'web' },
                 {'title': lp.databaseServer, 'component': 'ServerDatabaseConfig', 'icon': 'database' },
                 {'title': lp.storageServer, 'component': 'ServerStorageConfig', 'icon': 'download' },
-                {'title': lp.cloudConfig, 'component': 'ServerCloudConfig', 'icon': 'cloud' },
+                // {'title': lp.cloudConfig, 'component': 'ServerCloudConfig', 'icon': 'cloud' },
                 {'title': lp.processConfig, 'component': 'ServerProcessConfig', 'icon': 'flow' },
 
                 {'title': lp.messageConfig, 'component': 'ServerMessageConfig', 'icon': 'message' },
@@ -45,7 +45,7 @@ function getMenuJson(){
                 {'title': lp.passwordConfig, 'component': 'SecurityPasswordConfig', 'icon': 'password' },
                 {'title': lp.loginConfig, 'component': 'SecurityLoginConfig', 'icon': 'signin' },
                 {'title': lp.ssoConfig, 'component': 'SecuritySSOConfig', 'icon': 'sso' },
-                {'title': lp.ternaryManagement, 'component': 'SecurityTernaryConfig', 'icon': 'log' }
+                // {'title': lp.ternaryManagement, 'component': 'SecurityTernaryConfig', 'icon': 'log' }
             ]
         },
         // {

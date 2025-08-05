@@ -37,9 +37,9 @@
 
     </div>
 
-    <div class="menuBottom">
+    <!-- <div class="menuBottom">
       <div class="menuTitleText" @click="(e)=>{layout.openApplication(e,'ConfigDesigner')}">JSON配置</div>
-    </div>
+    </div> -->
 
 <!--    <div class="menuItem" @click="(e)=>{layout.openApplication(e,'ConfigDesigner')}">-->
 <!--      <div class="menuItemIcon"><i class="o2icon-log"></i></div>-->

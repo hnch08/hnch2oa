@@ -1,6 +1,6 @@
 <template>
 <!--  <div class="systemconfig_item_title">{{lp._resource.componentResource}}</div>-->
-  <div class="systemconfig_item_info" v-html="lp._resource.componentResourceInfo"></div>
+  <!-- <div class="systemconfig_item_info" v-html="lp._resource.componentResourceInfo"></div> -->
   <div class="componentsArea">
     <div class="componentItem" v-for="(componentItem, index) in components" :key="componentItem.id">
       <div class="componentItemTitle" :title="componentItem.title">{{componentItem.title}}</div>

@@ -28,7 +28,7 @@ export default component({
                     icon: 'database',
                     title: '设置数据库',
                     textList: [
-                        'O2OA（翱途）平台内置H2数据库，它是一个内嵌式的内存数据库，适合用于开发环境、功能演示环境，并不适合用作正式环境。',
+                        '平台内置H2数据库，它是一个内嵌式的内存数据库，适合用于开发环境、功能演示环境，并不适合用作正式环境。',
                         '如果作为正式环境使用，建议您使用拥有更高性能并且更加稳定的商用级别数据库。如Mysql8, Oracle12C, SQLServer 2012等',
                         '您可以在此初始化服务器页面选择使用内置H2数据库，或外部数据库。',
                         '更多数据库配置选项可在服务器初始化后，进入“系统配置”应用进行设置'
@@ -40,9 +40,9 @@ export default component({
                     textList: [
                         '您可以将从其它服务器导出的数据包，在此页面中导入，以便于快速恢复或搭建应用。',
                         '在您已有服务器进行导出操作（ctl -dd 命令，或在“系统配置”的“数据库配置”中操作），会在服务器目录“o2server/local/dump”下得到“dumpData_时间”的文件夹，将其打包为zip文件后，可在服务器初始化时导入所有数据',
-                        '关于数据的导出可查看：',
-                        '<a href="https://www.o2oa.net/cms/serverdeployment/256.html" style="color: #ffffff; text-indent: 0em; display: block;" target="_blank">《数据导出导入与系统数据备份》</a>',
-                        '<a href="https://www.o2oa.net/cms/videoproduct/455.html" style="color: #ffffff; text-indent: 0em; display: block;" target="_blank">《系统配置-服务配置-数据库配置》</a>'
+                        // '关于数据的导出可查看：',
+                        // '<a href="https://www.o2oa.net/cms/serverdeployment/256.html" style="color: #ffffff; text-indent: 0em; display: block;" target="_blank">《数据导出导入与系统数据备份》</a>',
+                        // '<a href="https://www.o2oa.net/cms/videoproduct/455.html" style="color: #ffffff; text-indent: 0em; display: block;" target="_blank">《系统配置-服务配置-数据库配置》</a>'
                     ]
                 },
                 {

@@ -3,7 +3,7 @@
 
     <div class="systemconfig_title">{{lp._integrationConfig.qiyeweixin}}</div>
     <div class="systemconfig_item_info" v-html="lp._integrationConfig.qywenxinText.enableInfo"></div>
-    <div class="systemconfig_item_info" v-html="lp._integrationConfig.qywenxinText.enableInfo2"></div>
+    <!-- <div class="systemconfig_item_info" v-html="lp._integrationConfig.qywenxinText.enableInfo2"></div> -->
 
     <div>
       <BaseBoolean :label="lp._integrationConfig.qywenxinText.enable" v-model:value="configData.enable"
