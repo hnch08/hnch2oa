@@ -1,0 +1,11 @@
+services:
+  o2oa:
+    build:
+      context: .  # 当前目录（含 Dockerfile 和项目代码）
+      dockerfile: Dockerfile
+    container_name: o2oa-server
+    ports:
+      - "8080:80"      # Web UI
+      - "20020:20020"
+      - "20030:20030"
+    restart: unless-stopped

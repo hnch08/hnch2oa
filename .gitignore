@@ -4,6 +4,8 @@
 **/bin/
 **/target/
 /target/**
+**/target*/
+/target*/**
 /o2server/webroot/
 /o2server/servers/
 /o2server/store/jars/*.jar
