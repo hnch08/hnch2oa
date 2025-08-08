@@ -1,0 +1,16 @@
+services:
+  hnch2oa:
+    image: ai185/hnch2oa:latest
+    # build:
+      # context: .  # 当前目录（含 Dockerfile 和项目代码）
+      # dockerfile: Dockerfile
+    container_name: o2oa-server
+    ports:
+      - "80:80"          # HTTP 服务
+      - "8096:8096"      # Web UI
+      - "20020:20020"
+      - "20030:20030"
+    restart: unless-stopped
+    volumes:
+      - ./config:/app/config
+      - ./logs:/app/logs
