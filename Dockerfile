@@ -14,6 +14,6 @@ COPY target/o2server/ .
 # 启动脚本赋权
 RUN chmod +x start_linux.sh
 
-EXPOSE 8080 20020 20030
+EXPOSE 80 20020 20030
 
 CMD ["bash", "./start_linux.sh"]
